@@ -57,6 +57,7 @@ main {
   display: grid;
   grid-column: 2 / 3;
   grid-template-columns: 3fr 1fr;
+  background-color: var(--primary-clr);
 }
 
 .sidebar {
@@ -231,3 +232,36 @@ main {
   border-radius: 30px;
   margin-left: .5rem;
 }
+
+.header2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header2 > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header2 > div:first-child > a > svg{
+  width: 50px;
+  height: 50px;
+}
+
+.header2 > div:nth-child(2) {
+  width: max-content;
+}
+
+.header2 > div:nth-child(2) > button {
+  margin-left: 1rem;
+  width: 100px;
+  height: 30px;
+  background-color: var(--least-clr);
+  color: var(--primary-clr);
+  font-family: "Madimi One", sans-serif;
+  border: none;
+  border-radius: 1rem;
+}
+
